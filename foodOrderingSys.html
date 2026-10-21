@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DishDash</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+    <header>
+        <div id="headerDiv">
+            <div id="header-left">
+                <p id="appName">DishDash</p>
+                <button id="addAddressButt">
+                    Add Address
+                    <span class="material-symbols-outlined">
+                        add_location
+                    </span>
+                </button>
+            </div>
+
+            <div id="header-right">
+                <button id="menuBttn">Menu</button>
+                <button id="authbttn">Register / Sign In</button>
+                <button style="display: none;" id="userprofButt">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                </button>
+                <button style="display: none;" id="adminPanelButt" class="admin-only">
+                    <span class="material-symbols-outlined">
+                        admin_panel_settings
+                    </span>Admin
+                </button>
+                <button id="orderBttn"><span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>Order Now</button>
+            </div>
+        </div>
+    </header>
+    <main id="mainContent">
+        <form action="" style="display: none;" class="overlay" id="registerSignIn">
+            <div class="modal">
+                <div class="modalheadCon">
+                    <h1 id="an">DishDash</h1>
+                    <h2>Register / Sign In</h2>
+                </div>
+
+                <p id="srgreet">Sign in or register to order your favorites faster.</p>
+                <div class="rsbuttsCon">
+                    <button id="regbutt" type="button">Register</button>
+                    <button id="signbutt" type="button">Sign In</button>
+                </div>
+                <span id="line">
+                    <p>or</p>
+                </span>
+                <button id="congbutt">Continue as Guest</button>
+                <p id="Agtp">By continuing, you agree to our <b>Terms & Conditions</b> and <b>Privacy Notice.</b></p>
+            </div>
+        </form>
+        <div class="firstPage">
+            <section id="featuredmenu">
+                <div class="fpheader">
+                    <h2>Featured Menu</h2>
+                    <h4 class="vall">View All</h4>
+                </div>
+
+                <div id="featuredMenuCon">
+                    <div class="featured" id="mainCourseDiv">
+                        <img src=".\src\images\featuredMenuCat\img1.jpg" alt="">
+                        <h3>Main Courses</h3>
+                    </div>
+                    <div class="featured" id="dessertsDiv">
+                        <img src=".\src\images\featuredMenuCat\img2.jpg" alt="">
+                        <h3>Desserts</h3>
+                    </div>
+                    <div class="featured" id="beveragesDiv">
+                        <img src=".\src\images\featuredMenuCat\img3.jpg" alt="">
+                        <h3>Beverages</h3>
+                    </div>
+                </div>
+            </section>
+            <section id="bestSellerspage">
+                <div class="fpheader">
+                    <h2>Best Sellers</h2>
+                    <h4 class="vall">View All</h4>
+                </div>
+                <div class="slider">
+                    <div id="bestSellersCon">
+                        <div class="bestSellers">
+                            <img src=".\src\images\bestSellers\img2.jpg" alt="">
+                            <div class="bsNameAdd">
+                                <p>BQ Bacon Cheeseburger</p>
+                                <div class="priceAndButton">
+                                    <p><b>₱350.00</b></p>
+                                    <button>
+                                        <span class="material-symbols-outlined">add</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bestSellers">
+                            <img src=".\src\images\bestSellers\img4.jpg" alt="">
+                            <div class="bsNameAdd">
+                                <p>Traditional Moussaka</p>
+                                <div class="priceAndButton">
+                                    <p><b>₱420.00</b></p>
+                                    <button>
+                                        <span class="material-symbols-outlined">add</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bestSellers">
+                            <img src=".\src\images\bestSellers\img12.jpg" alt="">
+                            <div class="bsNameAdd">
+                                <p>Classic New York Cheesecake</p>
+                                <div class="priceAndButton">
+                                    <p><b>₱250.00</b></p>
+                                    <button>
+                                        <span class="material-symbols-outlined">add</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bestSellers">
+                            <img src=".\src\images\bestSellers\img11.jpg" alt="">
+                            <div class="bsNameAdd">
+                                <p>Decadent Chocolate Mousse</p>
+                                <div class="priceAndButton">
+                                    <p><b>₱180.00</b></p>
+                                    <button>
+                                        <span class="material-symbols-outlined">add</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bestSellers">
+                            <img src=".\src\images\bestSellers\img1.jpg" alt="">
+                            <div class="bsNameAdd">
+                                <p>Healthy Green Smoothie</p>
+                                <div class="priceAndButton">
+                                    <p><b>₱190.00</b></p>
+                                    <button>
+                                        <span class="material-symbols-outlined">add</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bestSellers">
+                            <img src=".\src\images\bestSellers\img10.jpg" alt="">
+                            <div class="bsNameAdd">
+                                <p>Strawberry Milkshake</p>
+                                <div class="priceAndButton">
+                                    <p><b>₱180.00</b></p>
+                                    <button>
+                                        <span class="material-symbols-outlined">add</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bestSellers">
+                            <img src=".\src\images\bestSellers\img2.jpg" alt="">
+                            <div class="bsNameAdd">
+                                <p>BBQ Bacon Cheeseburger</p>
+                                <div class="priceAndButton">
+                                    <p><b>₱350.00</b></p>
+                                    <button>
+                                        <span class="material-symbols-outlined">add</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bestSellers">
+                            <img src=".\src\images\bestSellers\img4.jpg" alt="">
+                            <div class="bsNameAdd">
+                                <p>Traditional Moussaka</p>
+                                <div class="priceAndButton">
+                                    <p><b>₱420.00</b></p>
+                                    <button>
+                                        <span class="material-symbols-outlined">add</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bestSellers">
+                            <img src=".\src\images\bestSellers\img12.jpg" alt="">
+                            <div class="bsNameAdd">
+                                <p>Classic New York Cheesecake</p>
+                                <div class="priceAndButton">
+                                    <p><b>₱250.00</b></p>
+                                    <button>
+                                        <span class="material-symbols-outlined">add</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bestSellers">
+                            <img src=".\src\images\bestSellers\img11.jpg" alt="">
+                            <div class="bsNameAdd">
+                                <p>Decadent Chocolate Mousse</p>
+                                <div class="priceAndButton">
+                                    <p><b>₱180.00</b></p>
+                                    <button>
+                                        <span class="material-symbols-outlined">add</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bestSellers">
+                            <img src=".\src\images\bestSellers\img1.jpg" alt="">
+                            <div class="bsNameAdd">
+                                <p>Healthy Green Smoothie</p>
+                                <div class="priceAndButton">
+                                    <p><b>₱190.00</b></p>
+                                    <button>
+                                        <span class="material-symbols-outlined">add</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bestSellers">
+                            <img src=".\src\images\bestSellers\img10.jpg" alt="">
+                            <div class="bsNameAdd">
+                                <p>Strawberry Milkshake</p>
+                                <div class="priceAndButton">
+                                    <p><b>₱180.00</b></p>
+                                    <button>
+                                        <span class="material-symbols-outlined">add</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Welcome to DishDash. Your Dining Experience, Delivered Directly to You.</h2>
+                <p><b>DishDash</b> is a premier online food ordering web app that brings extraordinary culinary
+                    experiences straight to your door.
+                </p>
+                <p>
+                    Whether you are planning a comforting family feast or an elegant date
+                    night, our intuitive platform makes it effortless to explore, customize, and order your favorite
+                    meals.
+                </p>
+                <h3>Why Choose DishDash?</h3>
+                <ul>
+                    <li>
+                        <p>Seamless & Secure Ordering: Browse our visually appetizing menu, customize your dietary
+                            preferences, and check out securely in just a few clicks.</p>
+                    </li>
+                    <li>
+                        <p>Real-Time Tracking: Follow your meal's journey from the moment our chefs start cooking right
+                            to
+                            your doorstep.</p>
+                    </li>
+                    <li>
+                        <p>Curated Excellence: We focus on quality over clutter, ensuring every dish is crafted with
+                            premium
+                            ingredients and guaranteed to satisfy.</p>
+                    </li>
+                </ul>
+
+                <h3>Explore Our Menu</h3>
+                <ul>
+                    <li>
+                        <p>The Main Course: Hearty, satisfying showstoppers, ranging from a classic Grilled Ribeye Steak
+                            to
+                            vibrant Sizzling Chicken Fajitas.</p>
+                    </li>
+                    <li>
+                        <p>Decadent Desserts: End on a sweet note with rich indulgences like our Molten Chocolate Lava
+                            Cake
+                            or a delicate Crème Brûlée.</p>
+                    </li>
+                    <li>
+                        <p>Beverages: The perfect pairing for any mood, featuring freshly brewed coffees, healthy green
+                            smoothies, and elegant wines.</p>
+                    </li>
+                </ul>
+                <h3>Choose your cravings. Order with DishDash today.</h3>
+            </section>
+        </div>
+
+        <div class="secondPage" style="display: none;">
+            <div id="menu-head">
+                <div class="head1">
+                    <span class="material-symbols-outlined">
+                        menu_book_2
+                    </span>
+                    <h2>DishDash Menu</h2>
+                </div>
+                <div id="caretCon">
+                    <div id="category-caret">
+                        <button id="catIndic" type="button">Menu</button>
+                    </div>
+                    <div id="inputFieldsp">
+                        <input type="search" placeholder="Enter product name here...">
+                        <button id="searchb">Search</button>
+                    </div>
+                </div>
+            </div>
+            <section id="menu">
+                <section id="menu-main">
+                    <h2>Main Courses</h2>
+                    <div class="menuElems" id="mainCourseCon">
+                        <div class="foods">
+                            <img src=".\src\images\main courses\img1.jpg" alt="">
+                            <h4>Grilled Ribeye Steak</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\main courses\img7.jpg" alt="">
+                            <h4>Pan-Seared Salmon</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\main courses\img9.jpg" alt="">
+                            <h4>Herb-Roasted Chicken</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\main courses\img6.jpg" alt="">
+                            <h4>Spaghetti Carbonara</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\main courses\img5.jpg" alt="">
+                            <h4>Thai Green Curry</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\main courses\img4.jpg" alt="">
+                            <h4>Classic Fish and Chips</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\main courses\img10.jpg" alt="">
+                            <h4>Traditional Moussaka</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\main courses\img2.jpg" alt="">
+                            <h4>BBQ Bacon Cheeseburger</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\main courses\img3.jpg" alt="">
+                            <h4>Sizzling Chicken Fajitas</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\main courses\img8.jpg" alt="">
+                            <h4>Hearty Beef Stew</h4>
+                        </div>
+                    </div>
+                </section>
+                <section id="menu-beverages">
+                    <h2>Beverages</h2>
+                    <div class="menuElems" id="beveragesCon">
+                        <div class="foods">
+                            <img src=".\src\images\beverages\img3.jpg" alt="">
+                            <h4>Freshly Brewed Latte</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\beverages\img4.jpg" alt="">
+                            <h4>Refreshing Iced Tea</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\beverages\img10.jpg" alt="">
+                            <h4>Strawberry Milkshake</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\beverages\img7.jpg" alt="">
+                            <h4>Fresh Squeezed Orange Juice</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\beverages\img9.jpg" alt="">
+                            <h4>Classic Red Wine</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\beverages\img2.jpg" alt="">
+                            <h4>Classic Mojito Cocktail</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\beverages\img5.jpg" alt="">
+                            <h4>Rich Hot Chocolate</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\beverages\img6.jpg" alt="">
+                            <h4>Elegant Champagne Flute</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\beverages\img1.jpg" alt="">
+                            <h4>Healthy Green Smoothie</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\beverages\img8.jpg" alt="">
+                            <h4>Sparkling Mineral Water</h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="menu-desserts">
+                    <h2>Desserts</h2>
+                    <div class="menuElems" id="dessertsCon">
+                        <div class="foods">
+                            <img src=".\src\images\desserts\img1.jpg" alt="">
+                            <h4>Molten Chocolate Lava Cake</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\desserts\img10.jpg" alt="">
+                            <h4>Classic New York Cheesecake</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\desserts\img9.jpg" alt="">
+                            <h4>Crème Brûlée</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\desserts\img8.jpg" alt="">
+                            <h4>Apple Tarte Tatin</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\desserts\img6.jpg" alt="">
+                            <h4>Classic Tirami-su</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\desserts\img2.jpg" alt="">
+                            <h4>Lemon Meringue Pie</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\desserts\img7.jpg" alt="">
+                            <h4>Strawberry Shortcake</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\desserts\img4.jpg" alt="">
+                            <h4>Decadent Chocolate Mousse</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\desserts\img5.jpg" alt="">
+                            <h4>Profiteroles</h4>
+                        </div>
+                        <div class="foods">
+                            <img src=".\src\images\desserts\img3.jpg" alt="">
+                            <h4>Warm Sticky Toffee Pudding</h4>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+
+        <div class="modal-overlay" id="regModal">
+            <div class="modal-content">
+                <button class="close-btn">&times;</button>
+                <form action="addUserData.php" id="registrationForm" method="post">
+                    <input type="hidden" name="form_type" value="registration">
+                    <h1 class="brand-title">DishDash</h1>
+                    <h2 id="fhh">Register</h2>
+                    <p class="srgreet2">Welcome back. Register or Sign in to continue ordering and tracking your meals.</p>
+                    <div class="userInfoCon1">
+                        <div>
+                            <label>First Name<span>*</span></label>
+                            <input type="text" name="firstName" placeholder="Enter your First Name" required>
+                        </div>
+                        <div>
+                            <label>Last Name<span>*</span></label>
+                            <input type="text" name="lastName" placeholder="Enter your Last Name" required>
+                        </div>
+                    </div>
+
+                    <div class="userInfoCon2">
+                        <div class="birthInfoCon">
+                            <label>Birth Date <span>*</span></label>
+                            <div class="birtdateSelectCon">
+                                <select id="monthSelect" name="birthMonth" class="dropdown" required>
+                                    <option value="" disabled selected>Month</option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                                <select id="daySelect" name="birthDay" class="dropdown" required>
+                                    <option value="" disabled selected>Day</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="pnCon">
+                            <label>Phone Number<span>*</span></label>
+                            <input type="tel" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+                    </div>
+
+                    <div class="userAccCon">
+                        <div>
+                            <label>Email<span>*</span></label>
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div>
+                            <label>Password<span>*</span></label>
+                            <div class="password-input-wrap">
+                                <input type="password" name="password" id="regPasswordInput" placeholder="Create password" required>
+                                <button type="button" class="toggle-pw-btn" data-target="regPasswordInput" aria-label="Show password">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Confirm Password<span>*</span></label>
+                            <div class="password-input-wrap">
+                                <input type="password" name="confirmPassword" id="regConfirmPasswordInput" placeholder="Confirm password" required>
+                                <button type="button" class="toggle-pw-btn" data-target="regConfirmPasswordInput" aria-label="Show confirm password">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p id="Agtp1">By continuing, you agree to our <b>Terms & Conditions</b> and <b>Privacy Notice.</b>
+                    </p>
+
+                    <div id="responseMessage" style="display: none; margin-top: 10px; padding: 10px; border-radius: 6px; font-weight: bold;"></div>
+                    <button type="submit" class="submit-btn" id="submit-btn1">Create Account</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="signinModal">
+            <div class="modal-content">
+                <button class="close-btn">&times;</button>
+                <form action="addUserData.php" id="signinForm" method="post">
+                    <input type="hidden" name="form_type" value="login">
+                    <h1 class="brand-title">DishDash</h1>
+                    <h2>Sign In</h2>
+                    <p class="srgreet2">Sign in or register to continue ordering and tracking your meals.</p>
+                    <div class="signinInfoCon">
+                        <div>
+                            <label>Email<span>*</span></label>
+                            <input type="email" name="email" placeholder="Enter email" required>
+                        </div>
+                        <div>
+                            <label>Password<span>*</span></label>
+                            <div class="password-input-wrap">
+                                <input type="password" name="password" id="signinPasswordInput" placeholder="Enter password" required>
+                                <button type="button" class="toggle-pw-btn" data-target="signinPasswordInput" aria-label="Show password">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Admin Code</label>
+                            <input type="text" name="admin_code" id="signinAdminCodeInput" placeholder="Admin access code (optional)" autocomplete="off">
+                        </div>
+
+                    </div>
+                    <p id="Agtp2">By continuing, you agree to our <b>Terms & Conditions</b> and <b>Privacy Notice.</b>
+                    </p>
+                    <div id="signinMessage" style="display: none; margin-top: 10px; padding: 10px; border-radius: 6px; font-weight: bold;"></div>
+                    <button type="submit" class="submit-btn" id="submit-btn2">Sign In</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="deliveryAddModal" style="display: none;">
+            <div class="deliveryAddFormCon">
+                <form action="addUserData.php" id="deliveryAddForm" method="post">
+                    <button type="button" class="close-btn" id="closeAddress">&times;</button>
+                    <h1>DishDash</h1>
+
+                    <input type="hidden" name="form_type" value="delivery_address">
+
+                    <div>
+                        <label>Street Address<span>*</span></label>
+                        <input type="text" name="street_address" placeholder="(e.g., 123 Maple Street)" required>
+                    </div>
+                    <div>
+                        <label>Apt, Suite, Unit, or Floor<span>*</span></label>
+                        <input type="text" name="apt_suite" placeholder="(Optional, but vital for high-rises)">
+                    </div>
+                    <div>
+                        <label>City, State / Province / Region<span>*</span></label>
+                        <input type="text" name="city_state" required>
+                    </div>
+                    <div>
+                        <label>Postal / ZIP Code<span>*</span></label>
+                        <input type="text" name="zip_code" placeholder="(e.g 8402)" required>
+                    </div>
+                    <div>
+                        <label>Additional Information<span>*</span></label>
+                        <textarea name="additional_info"
+                            placeholder="Any landmarks or specific delivery instructions?"></textarea>
+                    </div>
+                    <div id="addressMessage" style="display: none; margin-top: 10px; padding: 10px; border-radius: 6px; font-weight: bold;"></div>
+                    <button type="submit">Deliver Here</button>
+                </form>
+            </div>
+        </div>
+        <div class="modal-overlay" id="productModal" style="display: none;">
+            <div class="pMHead">
+                <button id="closeProductModal">
+                    <span class="material-symbols-outlined">
+                        arrow_left_alt
+                    </span>
+                </button>
+                <h3>Product Details</h3>
+            </div>
+            <div class="modal-content product-modal-content">
+                <div class="product-layout">
+                    <div class="product-image-container">
+                        <img id="modalProductImage" src="" alt="Product Image">
+                    </div>
+                    <div class="product-details-container">
+                        <div class="product-header-info">
+                            <h2 id="modalProductName">Product Name</h2>
+                            <h3 id="modalProductPrice">₱0.00</h3>
+                            <p id="modalProductDescription" class="product-description"></p>
+                        </div>
+
+                        <div class="quantity-selector">
+                            <label>Quantity <span>*</span></label>
+                            <div class="controls">
+                                <button id="decreQuan" type="button" aria-label="Decrease quantity">−</button>
+                                <div id="quanValue">1</div>
+                                <button id="increQuan" type="button" aria-label="Increase quantity">+</button>
+                            </div>
+
+                            <div class="payment-method-section">
+                                <label class="payment-label">Payment Method <span>*</span></label>
+                                <div class="payment-options">
+                                    <label class="payment-option" id="codOption">
+                                        <input type="radio" name="paymentMethod" value="cod" checked>
+                                        <span class="payment-option-inner">
+                                            <span class="material-symbols-outlined">payments</span>
+                                            <span class="payment-option-text">
+                                                <b>Cash on Delivery</b>
+                                                <small>Pay when your order arrives</small>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="payment-option" id="onlineOption">
+                                        <input type="radio" name="paymentMethod" value="online">
+                                        <span class="payment-option-inner">
+                                            <span class="material-symbols-outlined">credit_card</span>
+                                            <span class="payment-option-text">
+                                                <b>Online Payment</b>
+                                                <small>GCash, Maya, Credit/Debit Card</small>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div id="orderMessage" style="display: none; margin-top: 10px; padding: 10px; border-radius: 6px; font-weight: bold;"></div>
+                            <button type="button" class="submit-btn" id="addToCartBtn" style="margin-top: auto;">
+                                <span class="material-symbols-outlined"
+                                    style="vertical-align: middle; margin-right: 5px;">shopping_cart</span>
+                                Add to Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal-overlay" id="onlinePaymentModal" style="display: none;">
+            <div class="online-payment-container">
+                <button class="close-btn" id="closePaymentModal">&times;</button>
+                <h1 class="brand-title">DishDash</h1>
+                <h2>Online Payment</h2>
+                <p class="payment-subtitle">Choose your preferred payment method</p>
+
+                <div class="online-payment-tabs">
+                    <button class="pay-tab active" data-tab="gcash">GCash</button>
+                    <button class="pay-tab" data-tab="maya">Maya</button>
+                    <button class="pay-tab" data-tab="card">Card</button>
+                </div>
+
+
+                <div class="pay-tab-content active" id="tab-gcash">
+                    <div class="gcash-info">
+                        <div class="qr-placeholder">
+                            <span class="material-symbols-outlined qr-icon">qr_code_2</span>
+                            <p>Scan with GCash App</p>
+                        </div>
+                        <div class="pay-or-divider"><span>or</span></div>
+                        <div class="pay-field-group">
+                            <label>GCash Number</label>
+                            <input type="tel" placeholder="09XX XXX XXXX" class="pay-input" maxlength="11">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pay-tab-content" id="tab-maya">
+                    <div class="gcash-info">
+                        <div class="qr-placeholder maya-qr">
+                            <span class="material-symbols-outlined qr-icon">qr_code_2</span>
+                            <p>Scan with Maya App</p>
+                        </div>
+                        <div class="pay-or-divider"><span>or</span></div>
+                        <div class="pay-field-group">
+                            <label>Maya Number</label>
+                            <input type="tel" placeholder="09XX XXX XXXX" class="pay-input" maxlength="11">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="pay-tab-content" id="tab-card">
+                    <div class="card-form">
+                        <div class="pay-field-group">
+                            <label>Card Number</label>
+                            <input type="text" placeholder="1234 5678 9012 3456" class="pay-input" maxlength="19" id="cardNumberInput">
+                        </div>
+                        <div class="card-row">
+                            <div class="pay-field-group">
+                                <label>Expiry Date</label>
+                                <input type="text" placeholder="MM / YY" class="pay-input" maxlength="7">
+                            </div>
+                            <div class="pay-field-group">
+                                <label>CVV</label>
+                                <input type="text" placeholder="•••" class="pay-input" maxlength="4">
+                            </div>
+                        </div>
+                        <div class="pay-field-group">
+                            <label>Cardholder Name</label>
+                            <input type="text" placeholder="As it appears on card" class="pay-input">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-total-row">
+                    <span>Total Amount:</span>
+                    <span id="paymentModalTotal" class="payment-total-amount">₱0.00</span>
+                </div>
+
+                <button type="button" class="submit-btn pay-now-btn" id="payNowBtn">
+                    <span class="material-symbols-outlined">lock</span>
+                    Pay Now
+                </button>
+                <p class="pay-secure-note">Visual payment demo only - no real charge will be made.</p>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="orderConfirmModal" style="display: none;">
+            <div class="order-confirm-container">
+                <div class="order-confirm-icon">
+                    <span class="material-symbols-outlined confirm-check">check_circle</span>
+                </div>
+                <h2>Order Placed!</h2>
+                <p class="order-confirm-msg">Your order has been successfully placed and is now being prepared.</p>
+                <div class="order-confirm-details">
+                    <div class="confirm-item-row">
+                        <img id="confirmOrderImg" src="" alt="">
+                        <div>
+                            <p id="confirmOrderName" class="confirm-name"></p>
+                            <p id="confirmOrderQty" class="confirm-qty"></p>
+                            <p id="confirmOrderTotal" class="confirm-total"></p>
+                        </div>
+                    </div>
+                    <div class="confirm-payment-row">
+                        <span class="material-symbols-outlined">payments</span>
+                        <span id="confirmPaymentMethod">Cash on Delivery</span>
+                    </div>
+                </div>
+                <div class="order-status-track">
+                    <div class="status-step active" id="sstep1">
+                        <span class="material-symbols-outlined">receipt</span>
+                        <small>Order Placed</small>
+                    </div>
+                    <div class="status-line"></div>
+                    <div class="status-step" id="sstep2">
+                        <span class="material-symbols-outlined">outdoor_grill</span>
+                        <small>Preparing</small>
+                    </div>
+                    <div class="status-line"></div>
+                    <div class="status-step" id="sstep3">
+                        <span class="material-symbols-outlined">delivery_dining</span>
+                        <small>On the Way</small>
+                    </div>
+                    <div class="status-line"></div>
+                    <div class="status-step" id="sstep4">
+                        <span class="material-symbols-outlined">home</span>
+                        <small>Delivered</small>
+                    </div>
+                </div>
+                <p class="confirm-eta">Estimated delivery: <b id="confirmETA"></b></p>
+                <button class="submit-btn" id="closeConfirmModal">Done</button>
+            </div>
+        </div>
+        <div class="userProfPageCon" style="display: none;">
+            <div class="upIndicCon">
+                <button id="profileTabButt" class="up-tab-active">
+                    <span class="material-symbols-outlined">person</span>
+                    My Profile
+                </button>
+                <button id="ordersTabButt">
+                    <span class="material-symbols-outlined">receipt_long</span>
+                    My Orders
+                </button>
+                <button id="logoutButt">
+                    <span class="material-symbols-outlined">logout</span>
+                    Log Out
+                </button>
+            </div>
+            <div class="profilePage">
+                <div class="profilePage-header">
+                    <div class="profilePage-avatar">
+                        <span class="material-symbols-outlined avatar-icon">person</span>
+                    </div>
+                    <div class="profilePage-title">
+                        <h1 id="profileHeaderName">My Profile</h1>
+                        <p id="profileHeaderEmail" class="profile-header-email"></p>
+                    </div>
+                </div>
+
+                <div class="profile-sections-grid">
+                    
+                    <div class="profile-card">
+                        <div class="profile-card-header">
+                            <span class="material-symbols-outlined">badge</span>
+                            <h3>Personal Information</h3>
+                            <button class="profile-edit-card-btn" id="editPersonalBtn" title="Edit Personal Info">
+                                <span class="material-symbols-outlined">edit</span>
+                                Edit
+                            </button>
+                        </div>
+                        <div class="profile-card-body">
+                            <div class="profile-info-row">
+                                <span class="profile-info-label">Full Name</span>
+                                <span class="profile-info-value" id="profileName">—</span>
+                            </div>
+                            <div class="profile-info-row">
+                                <span class="profile-info-label">Email</span>
+                                <span class="profile-info-value" id="profileEmail">—</span>
+                            </div>
+                            <div class="profile-info-row">
+                                <span class="profile-info-label">Birth Date</span>
+                                <span class="profile-info-value" id="profileBirthDate">—</span>
+                            </div>
+                            <div class="profile-info-row">
+                                <span class="profile-info-label">Phone</span>
+                                <span class="profile-info-value" id="profilePhone">—</span>
+                            </div>
+                        </div>
+                    </div>
+
+                
+                    <div class="profile-card">
+                        <div class="profile-card-header">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <h3>Delivery Address</h3>
+                            <button class="profile-edit-card-btn" id="editAddressBtn" title="Edit Address">
+                                <span class="material-symbols-outlined">edit</span>
+                                Edit
+                            </button>
+                        </div>
+                        <div class="profile-card-body">
+                            <div class="profile-info-row">
+                                <span class="profile-info-label">Street</span>
+                                <span class="profile-info-value" id="profileStreetAddress">No address saved</span>
+                            </div>
+                            <div class="profile-info-row">
+                                <span class="profile-info-label">Apt/Suite</span>
+                                <span class="profile-info-value" id="profileAptSuite">N/A</span>
+                            </div>
+                            <div class="profile-info-row">
+                                <span class="profile-info-label">City/Region</span>
+                                <span class="profile-info-value" id="profileCityState">—</span>
+                            </div>
+                            <div class="profile-info-row">
+                                <span class="profile-info-label">ZIP Code</span>
+                                <span class="profile-info-value" id="profileZipCode">—</span>
+                            </div>
+                            <div class="profile-info-row">
+                                <span class="profile-info-label">Notes</span>
+                                <span class="profile-info-value" id="profileAdditionalInfo">N/A</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div style="display: none;" class="ordersPage">
+                <div class="orders-header">
+                    <h2>My Orders</h2>
+                    <p class="orders-subtitle">Track and review your past orders</p>
+                </div>
+                <div id="ordersList">
+                    No orders yet.
+                </div>
+            </div>
+        </div>
+
+        <div class="adminPanelCon" id="adminPanel" style="display: none;">
+            <div class="upIndicCon admin-nav">
+                <button id="adminOrdersTab" class="admin-tab-btn up-tab-active" data-admin-tab="orders">
+                    <span class="material-symbols-outlined">receipt_long</span>
+                    Orders
+                </button>
+                <button id="adminMenuTab" class="admin-tab-btn" data-admin-tab="menu">
+                    <span class="material-symbols-outlined">restaurant_menu</span>
+                    Menu
+                </button>
+                <button id="adminUsersTab" class="admin-tab-btn" data-admin-tab="users">
+                    <span class="material-symbols-outlined">group</span>
+                    Users
+                </button>
+                <button id="adminLogoutButt">
+                    <span class="material-symbols-outlined">logout</span>
+                    Log Out
+                </button>
+            </div>
+
+            <div class="adminDashboard">
+                <section class="admin-section admin-section-active" id="adminOrdersSection" data-admin-section="orders">
+                    <div class="admin-section-header">
+                        <div>
+                            <h1>Order Management</h1>
+                            <p>View, filter, update, cancel, and refund orders.</p>
+                        </div>
+                        <button type="button" class="admin-small-action" id="adminRefreshButt">
+                            <span class="material-symbols-outlined">refresh</span>
+                            Refresh
+                        </button>
+                    </div>
+
+                    <div class="admin-stats-grid">
+                        <div class="admin-stat">
+                            <span>Total</span>
+                            <strong id="adminStatTotal">0</strong>
+                        </div>
+                        <div class="admin-stat">
+                            <span>Pending</span>
+                            <strong id="adminStatPending">0</strong>
+                        </div>
+                        <div class="admin-stat">
+                            <span>On the Way</span>
+                            <strong id="adminStatOnWay">0</strong>
+                        </div>
+                        <div class="admin-stat">
+                            <span>Delivered</span>
+                            <strong id="adminStatDelivered">0</strong>
+                        </div>
+                    </div>
+
+                    <div class="admin-filter-bar" id="adminOrderFilters">
+                        <button type="button" class="admin-filter-active" data-order-filter="all">All</button>
+                        <button type="button" data-order-filter="pending">Pending</button>
+                        <button type="button" data-order-filter="on_the_way">On the Way</button>
+                        <button type="button" data-order-filter="delivered">Delivered</button>
+                        <button type="button" data-order-filter="cancelled">Cancelled</button>
+                        <button type="button" data-order-filter="refunded">Refunded</button>
+                    </div>
+
+                    <div class="admin-table-wrap">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Order</th>
+                                    <th>Customer</th>
+                                    <th>Payment</th>
+                                    <th>Status</th>
+                                    <th>Update</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="adminOrdersBody">
+                                <tr>
+                                    <td colspan="6">No orders yet.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="admin-section" id="adminMenuSection" data-admin-section="menu">
+                    <div class="admin-section-header">
+                        <div>
+                            <h1>Menu Management</h1>
+                            <p>Create categories, add foods inside them, and control what appears in the customer menu.</p>
+                        </div>
+                    </div>
+
+                    <form id="adminCategoryForm" class="admin-menu-form">
+                        <input type="hidden" name="category_id" id="adminCategoryId">
+                        <div class="admin-form-title">
+                            <h2>Menu Category</h2>
+                            <p>Categories become sections on the customer menu.</p>
+                        </div>
+                        <div class="admin-form-grid">
+                            <div class="edit-field-group">
+                                <label>Category Name<span>*</span></label>
+                                <input type="text" name="name" id="adminCategoryName" placeholder="e.g., Pizza" required>
+                            </div>
+                            <div class="edit-field-group">
+                                <label>Display Order</label>
+                                <input type="number" name="sort_order" id="adminCategorySort" min="0" step="1" value="0">
+                            </div>
+                            <div class="edit-field-group">
+                                <label>Featured Image Path</label>
+                                <input type="text" name="image_src" id="adminCategoryImage" placeholder="src/images/featuredMenuCat/img1.jpg">
+                            </div>
+                        </div>
+                        <div id="adminCategoryMessage" class="edit-msg-box" style="display: none;"></div>
+                        <div class="edit-form-actions">
+                            <button type="button" class="edit-cancel-btn" id="adminCategoryReset">Clear</button>
+                            <button type="submit" class="submit-btn edit-save-btn" id="adminCategorySubmit">Save Category</button>
+                        </div>
+                    </form>
+
+                    <div class="admin-table-wrap admin-category-table-wrap">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Slug</th>
+                                    <th>Foods</th>
+                                    <th>Order</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="adminCategoryBody">
+                                <tr>
+                                    <td colspan="5">No menu categories yet.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <form id="adminMenuForm" class="admin-menu-form">
+                        <input type="hidden" name="item_id" id="adminMenuItemId">
+                        <div class="admin-form-title">
+                            <h2>Food Item</h2>
+                            <p>Foods appear inside the selected menu category.</p>
+                        </div>
+                        <div class="admin-form-grid">
+                            <div class="edit-field-group">
+                                <label>Category<span>*</span></label>
+                                <select name="category" id="adminMenuCategory" required>
+                                    <option value="">Create a category first</option>
+                                </select>
+                            </div>
+                            <div class="edit-field-group">
+                                <label>Food Name<span>*</span></label>
+                                <input type="text" name="name" id="adminMenuName" required>
+                            </div>
+                            <div class="edit-field-group">
+                                <label>Price<span>*</span></label>
+                                <input type="number" name="price" id="adminMenuPrice" min="1" step="0.01" required>
+                            </div>
+                            <div class="edit-field-group">
+                                <label>Image Path</label>
+                                <input type="text" name="image_src" id="adminMenuImage" placeholder="src/images/main courses/img1.jpg">
+                            </div>
+                            <div class="edit-field-group admin-field-wide">
+                                <label>Description</label>
+                                <textarea name="description" id="adminMenuDescription" rows="3" placeholder="Short description shown on the menu."></textarea>
+                            </div>
+                            <div class="edit-field-group">
+                                <label>Availability<span>*</span></label>
+                                <select name="is_available" id="adminMenuAvailability" required>
+                                    <option value="1">In Stock</option>
+                                    <option value="0">Out of Stock</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="adminMenuMessage" class="edit-msg-box" style="display: none;"></div>
+                        <div class="edit-form-actions">
+                            <button type="button" class="edit-cancel-btn" id="adminMenuReset">Clear</button>
+                            <button type="submit" class="submit-btn edit-save-btn" id="adminMenuSubmit">Save Item</button>
+                        </div>
+                    </form>
+
+                    <div class="admin-table-wrap">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Category</th>
+                                    <th>Price</th>
+                                    <th>Availability</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="adminMenuBody">
+                                <tr>
+                                    <td colspan="5">No menu items yet.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="admin-section" id="adminUsersSection" data-admin-section="users">
+                    <div class="admin-section-header">
+                        <div>
+                            <h1>User Management</h1>
+                            <p>View registered customer accounts.</p>
+                        </div>
+                    </div>
+
+                    <div class="admin-table-wrap">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>User</th>
+                                    <th>Contact</th>
+                                    <th>Birth Date</th>
+                                    <th>Orders</th>
+                                    <th>Total Spent</th>
+                                </tr>
+                            </thead>
+                            <tbody id="adminUsersBody">
+                                <tr>
+                                    <td colspan="5">No registered users yet.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        
+        <div class="modal-overlay" id="editPersonalModal" style="display: none;">
+            <div class="edit-modal-container">
+                <button class="close-btn" id="closeEditPersonal">&times;</button>
+                <h1 class="brand-title">DishDash</h1>
+                <h2>Edit Personal Info</h2>
+                <form id="editPersonalForm">
+                    <input type="hidden" name="form_type" value="update_profile">
+                    <div class="edit-form-grid">
+                        <div class="edit-field-group">
+                            <label>First Name<span>*</span></label>
+                            <input type="text" id="editFirstName" name="firstName" required>
+                        </div>
+                        <div class="edit-field-group">
+                            <label>Last Name<span>*</span></label>
+                            <input type="text" id="editLastName" name="lastName" required>
+                        </div>
+                        <div class="edit-field-group">
+                            <label>Phone Number<span>*</span></label>
+                            <input type="tel" id="editPhone" name="phone" required>
+                        </div>
+                        <div class="edit-field-group">
+                            <label>Email<span>*</span></label>
+                            <input type="email" id="editEmail" name="email" required>
+                        </div>
+                        <div class="edit-field-group">
+                            <label>Birth Month</label>
+                            <select id="editBirthMonth" name="birthMonth">
+                                <option value="">-- Month --</option>
+                                <option>January</option><option>February</option><option>March</option>
+                                <option>April</option><option>May</option><option>June</option>
+                                <option>July</option><option>August</option><option>September</option>
+                                <option>October</option><option>November</option><option>December</option>
+                            </select>
+                        </div>
+                        <div class="edit-field-group">
+                            <label>Birth Day</label>
+                            <select id="editBirthDay" name="birthDay">
+                                <option value="">-- Day --</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="editPersonalMsg" style="display:none;" class="edit-msg-box"></div>
+                    <div class="edit-form-actions">
+                        <button type="button" class="edit-cancel-btn" id="cancelEditPersonal">Cancel</button>
+                        <button type="submit" class="submit-btn edit-save-btn">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+        <div class="modal-overlay" id="editAddressModal" style="display: none;">
+            <div class="edit-modal-container">
+                <button class="close-btn" id="closeEditAddress">&times;</button>
+                <h1 class="brand-title">DishDash</h1>
+                <h2>Edit Delivery Address</h2>
+                <form id="editAddressForm">
+                    <input type="hidden" name="form_type" value="update_address">
+                    <div class="edit-form-grid single-col">
+                        <div class="edit-field-group">
+                            <label>Street Address<span>*</span></label>
+                            <input type="text" id="editStreetAddress" name="street_address" required>
+                        </div>
+                        <div class="edit-field-group">
+                            <label>Apt, Suite, Unit, or Floor</label>
+                            <input type="text" id="editAptSuite" name="apt_suite">
+                        </div>
+                        <div class="edit-field-group">
+                            <label>City, State / Province / Region<span>*</span></label>
+                            <input type="text" id="editCityState" name="city_state" required>
+                        </div>
+                        <div class="edit-field-group">
+                            <label>Postal / ZIP Code<span>*</span></label>
+                            <input type="text" id="editZipCode" name="zip_code" required>
+                        </div>
+                        <div class="edit-field-group">
+                            <label>Additional Information</label>
+                            <textarea id="editAdditionalInfo" name="additional_info" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div id="editAddressMsg" style="display:none;" class="edit-msg-box"></div>
+                    <div class="edit-form-actions">
+                        <button type="button" class="edit-cancel-btn" id="cancelEditAddress">Cancel</button>
+                        <button type="submit" class="submit-btn edit-save-btn">Save Address</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer id="footer">
+        <div class="footerDiv">
+            <h5>About Us</h5>
+            <h5>Corporate Information</h5>
+            <h5>Privacy Notice</h5>
+            <h5>Cookie Policy</h5>
+            <h5>Terms & Conditions</h5>
+            <h5>Help Center</h5>
+            <div id="socmedAccs">
+                <div><i class="fa-brands fa-facebook-f"></i></div>
+                <div><i class="fa-brands fa-instagram"></i></div>
+                <div><i class="fa-brands fa-x"></i></div>
+                <div><i class="fa-brands fa-tiktok"></i></div>
+            </div>
+        </div>
+        <div class="footerDiv" id="footerDiv2">
+            <div id="lastinfo">
+                <p>DTI Trustmark Application submitted with Reference No. 250922-13531096, pending approval</p>
+                <p>Version 1.23.1 2026: © 2025 - 2026 DishDash. All rights reserved.</p>
+            </div>
+            <button id="ckp">Cookie Preferences</button>
+        </div>
+    </footer>
+    <script src="foodOrderingSys.js"></script>
+    <script src="https://kit.fontawesome.com/bd70f9279c.js" crossorigin="anonymous"></script>
+    <script>
+    if (false) {
+
+    document.querySelectorAll('.toggle-pw-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const targetId = this.dataset.target;
+            const input = document.getElementById(targetId);
+            const icon = this.querySelector('.material-symbols-outlined');
+            if (!input) return;
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.textContent = 'visibility_off';
+            } else {
+                input.type = 'password';
+                icon.textContent = 'visibility';
+            }
+        });
+    });
+
+    const registrationForm = document.getElementById('registrationForm');
+    if (registrationForm) {
+        registrationForm.addEventListener('submit', function(e) {
+            const pw = document.getElementById('regPasswordInput');
+            const cpw = document.getElementById('regConfirmPasswordInput');
+            if (pw && cpw && pw.value !== cpw.value) {
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                const msg = document.getElementById('responseMessage');
+                if (msg) {
+                    msg.style.display = 'block';
+                    msg.style.background = '#fde8e8';
+                    msg.style.color = '#b93a3f';
+                    msg.textContent = 'Passwords do not match. Please try again.';
+                }
+            }
+        }, true);
+    }
+
+    const onlinePaymentModal = document.getElementById('onlinePaymentModal');
+    const orderConfirmModal  = document.getElementById('orderConfirmModal');
+    const closePaymentModal  = document.getElementById('closePaymentModal');
+    const payNowBtn          = document.getElementById('payNowBtn');
+    const closeConfirmBtn    = document.getElementById('closeConfirmModal');
+    const paymentModalTotal  = document.getElementById('paymentModalTotal');
+
+    document.querySelectorAll('.pay-tab').forEach(tab => {
+        tab.addEventListener('click', function () {
+            document.querySelectorAll('.pay-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.pay-tab-content').forEach(c => c.classList.remove('active'));
+            this.classList.add('active');
+            const tabId = 'tab-' + this.dataset.tab;
+            const content = document.getElementById(tabId);
+            if (content) content.classList.add('active');
+        });
+    });
+
+    const cardInput = document.getElementById('cardNumberInput');
+    if (cardInput) {
+        cardInput.addEventListener('input', function () {
+            let v = this.value.replace(/\D/g, '').substring(0, 16);
+            this.value = v.match(/.{1,4}/g)?.join(' ') || v;
+        });
+    }
+
+    if (closePaymentModal) {
+        closePaymentModal.addEventListener('click', () => {
+            onlinePaymentModal.style.display = 'none';
+            document.body.style.overflow = '';
+        });
+    }
+
+    if (payNowBtn) {
+        payNowBtn.addEventListener('click', () => {
+            onlinePaymentModal.style.display = 'none';
+            showOrderConfirmation('Online Payment');
+        });
+    }
+
+    if (closeConfirmBtn) {
+        closeConfirmBtn.addEventListener('click', () => {
+            orderConfirmModal.style.display = 'none';
+            document.body.style.overflow = '';
+            
+            const pm = document.getElementById('productModal');
+            if (pm) pm.style.display = 'none';
+        });
+    }
+
+    function patchAddToCartBtn() {
+        const origBtn = document.getElementById('addToCartBtn');
+        if (!origBtn || origBtn._payPatched) return;
+        origBtn._payPatched = true;
+
+        origBtn.addEventListener('click', function(e) {
+            const selectedPayment = document.querySelector('input[name="paymentMethod"]:checked');
+            if (!selectedPayment) return;
+
+            if (selectedPayment.value === 'online') {
+                e.stopImmediatePropagation();
+
+                const priceText = document.getElementById('modalProductPrice')?.textContent || '₱0.00';
+                const quantity = parseInt(document.getElementById('quanValue')?.textContent || '1');
+                const priceNum = parseFloat(priceText.replace(/[^0-9.]/g, ''));
+                const total = (priceNum * quantity).toFixed(2);
+                if (paymentModalTotal) paymentModalTotal.textContent = '₱' + parseFloat(total).toLocaleString('en-PH', {minimumFractionDigits: 2});
+
+                onlinePaymentModal.style.display = 'flex';
+            }
+
+        }, true);
+    }
+
+
+    const productModalObs = new MutationObserver(() => {
+        const pm = document.getElementById('productModal');
+        if (pm && pm.style.display !== 'none') {
+            setTimeout(patchAddToCartBtn, 50);
+        }
+    });
+    const pm = document.getElementById('productModal');
+    if (pm) productModalObs.observe(pm, { attributes: true, attributeFilter: ['style'] });
+
+
+    const _origFetch = window.fetch;
+    window.fetch = async function(...args) {
+        const res = await _origFetch(...args);
+
+        const clone = res.clone();
+        try {
+            const url = typeof args[0] === 'string' ? args[0] : args[0]?.url || '';
+            if (url.includes('addUserData')) {
+                const data = await clone.json();
+                if (data.status === 'success' && data.message?.includes('Added to order')) {
+                    const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked')?.value === 'online' ? 'Online Payment' : 'Cash on Delivery';
+                    setTimeout(() => showOrderConfirmation(paymentMethod), 300);
+                }
+            }
+        } catch(err) { /* ignore */ }
+        return res;
+    };
+
+    const _origXHROpen = XMLHttpRequest.prototype.open;
+    const _origXHRSend = XMLHttpRequest.prototype.send;
+    XMLHttpRequest.prototype.open = function(method, url, ...rest) {
+        this._url = url;
+        return _origXHROpen.call(this, method, url, ...rest);
+    };
+    XMLHttpRequest.prototype.send = function(body) {
+        this.addEventListener('load', function() {
+            if (this._url && this._url.includes('addUserData')) {
+                try {
+                    const data = JSON.parse(this.responseText);
+                    if (data.status === 'success' && data.message?.includes('Added to order')) {
+                        const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked')?.value === 'online' ? 'Online Payment' : 'Cash on Delivery';
+                        setTimeout(() => showOrderConfirmation(paymentMethod), 300);
+                    }
+                } catch(e) {}
+            }
+        });
+        return _origXHRSend.call(this, body);
+    };
+
+    function showOrderConfirmation(paymentMethod) {
+        const name    = document.getElementById('modalProductName')?.textContent || '';
+        const price   = document.getElementById('modalProductPrice')?.textContent || '₱0.00';
+        const qty     = parseInt(document.getElementById('quanValue')?.textContent || '1');
+        const imgSrc  = document.getElementById('modalProductImage')?.src || '';
+        const priceNum = parseFloat(price.replace(/[^0-9.]/g, ''));
+        const total   = (priceNum * qty).toFixed(2);
+
+        document.getElementById('confirmOrderName').textContent = name;
+        document.getElementById('confirmOrderQty').textContent = 'Quantity: ' + qty;
+        document.getElementById('confirmOrderTotal').textContent = '₱' + parseFloat(total).toLocaleString('en-PH', {minimumFractionDigits:2});
+        document.getElementById('confirmOrderImg').src = imgSrc;
+        document.getElementById('confirmPaymentMethod').textContent = paymentMethod;
+
+        
+        const eta = new Date(Date.now() + 60*60*1000);
+        document.getElementById('confirmETA').textContent = eta.toLocaleTimeString('en-PH', {hour:'2-digit', minute:'2-digit'}) + ' today';
+
+        document.querySelectorAll('.status-step').forEach(s => s.classList.remove('active'));
+        document.querySelectorAll('.status-line').forEach(l => l.classList.remove('active'));
+        document.getElementById('sstep1').classList.add('active');
+
+        orderConfirmModal.style.display = 'flex';
+
+        const steps = ['sstep2','sstep3','sstep4'];
+        const lines = document.querySelectorAll('.status-line');
+        steps.forEach((stepId, i) => {
+            setTimeout(() => {
+                document.getElementById(stepId).classList.add('active');
+                if (lines[i]) lines[i].classList.add('active');
+            }, (i+1) * 1000);
+        });
+    }
+
+
+    const editPersonalModal = document.getElementById('editPersonalModal');
+    const editAddressModal  = document.getElementById('editAddressModal');
+    const editPersonalBtn   = document.getElementById('editPersonalBtn');
+    const editAddressBtn    = document.getElementById('editAddressBtn');
+    const closeEditPersonal = document.getElementById('closeEditPersonal');
+    const closeEditAddress  = document.getElementById('closeEditAddress');
+    const cancelEditPersonal= document.getElementById('cancelEditPersonal');
+    const cancelEditAddress = document.getElementById('cancelEditAddress');
+
+    function openModal(modal) {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+    function closeModal(modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+    }
+
+    if (editPersonalBtn) {
+        editPersonalBtn.addEventListener('click', () => {
+
+            const fullName = document.getElementById('profileName')?.textContent || '';
+            const parts = fullName.split(' ');
+            document.getElementById('editFirstName').value = parts[0] || '';
+            document.getElementById('editLastName').value = parts.slice(1).join(' ') || '';
+            document.getElementById('editPhone').value = document.getElementById('profilePhone')?.textContent || '';
+            document.getElementById('editEmail').value = document.getElementById('profileEmail')?.textContent || '';
+            const bd = document.getElementById('profileBirthDate')?.textContent || '';
+            const bdParts = bd.split(' ');
+            const monthSel = document.getElementById('editBirthMonth');
+            if (monthSel && bdParts[0]) {
+                Array.from(monthSel.options).forEach(o => { if(o.value === bdParts[0]) o.selected = true; });
+                populateEditDays(monthSel.value, bdParts[1]);
+            }
+            openModal(editPersonalModal);
+        });
+    }
+
+    function populateEditDays(month, selectedDay) {
+        const dayMap = {January:31,February:29,March:31,April:30,May:31,June:30,July:31,August:31,September:30,October:31,November:30,December:31};
+        const daySelect = document.getElementById('editBirthDay');
+        if (!daySelect || !month) return;
+        const days = dayMap[month] || 31;
+        daySelect.innerHTML = '<option value="">-- Day --</option>';
+        for (let i = 1; i <= days; i++) {
+            const o = document.createElement('option');
+            o.value = String(i);
+            o.textContent = String(i);
+            if (String(i) === String(selectedDay) || i === parseInt(selectedDay)) o.selected = true;
+            daySelect.appendChild(o);
+        }
+    }
+
+    const editBirthMonthSel = document.getElementById('editBirthMonth');
+    if (editBirthMonthSel) {
+        editBirthMonthSel.addEventListener('change', function() {
+            populateEditDays(this.value, '');
+        });
+    }
+
+    if (closeEditPersonal) closeEditPersonal.addEventListener('click', () => closeModal(editPersonalModal));
+    if (cancelEditPersonal) cancelEditPersonal.addEventListener('click', () => closeModal(editPersonalModal));
+
+    if (editAddressBtn) {
+        editAddressBtn.addEventListener('click', () => {
+            document.getElementById('editStreetAddress').value = document.getElementById('profileStreetAddress')?.textContent?.replace('No address saved','') || '';
+            document.getElementById('editAptSuite').value = document.getElementById('profileAptSuite')?.textContent?.replace('N/A','') || '';
+            document.getElementById('editCityState').value = document.getElementById('profileCityState')?.textContent || '';
+            document.getElementById('editZipCode').value = document.getElementById('profileZipCode')?.textContent || '';
+            const ai = document.getElementById('profileAdditionalInfo')?.textContent || '';
+            document.getElementById('editAdditionalInfo').value = ai === 'N/A' ? '' : ai;
+            openModal(editAddressModal);
+        });
+    }
+
+    if (closeEditAddress) closeEditAddress.addEventListener('click', () => closeModal(editAddressModal));
+    if (cancelEditAddress) cancelEditAddress.addEventListener('click', () => closeModal(editAddressModal));
+
+    const editPersonalForm = document.getElementById('editPersonalForm');
+    if (editPersonalForm) {
+        editPersonalForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const userId = localStorage.getItem('dishdash_user_id') || sessionStorage.getItem('dishdash_user_id') || '';
+            const formData = new FormData(this);
+            formData.set('form_type', 'update_profile');
+            if (userId) formData.set('user_id', userId);
+
+            const msgBox = document.getElementById('editPersonalMsg');
+
+            fetch('addUserData.php', { method: 'POST', body: formData })
+                .then(r => r.json())
+                .then(data => {
+                    msgBox.style.display = 'block';
+                    if (data.status === 'success') {
+                        msgBox.style.background = '#e8f7ee';
+                        msgBox.style.color = '#219a52';
+                        msgBox.textContent = data.message;
+    
+                        if (data.user) {
+                            const u = data.user;
+                            document.getElementById('profileName').textContent = u.firstName + ' ' + u.lastName;
+                            document.getElementById('profileEmail').textContent = u.email;
+                            document.getElementById('profilePhone').textContent = u.phone;
+                            document.getElementById('profileBirthDate').textContent = u.birthMonth + ' ' + u.birthDay;
+                            document.getElementById('profileHeaderName').textContent = u.firstName + ' ' + u.lastName;
+                            document.getElementById('profileHeaderEmail').textContent = u.email;
+                        }
+                        setTimeout(() => closeModal(editPersonalModal), 1500);
+                    } else {
+                        msgBox.style.background = '#fde8e8';
+                        msgBox.style.color = '#b93a3f';
+                        msgBox.textContent = data.message || 'Update failed.';
+                    }
+                })
+                .catch(() => {
+                    msgBox.style.display = 'block';
+                    msgBox.style.background = '#fde8e8';
+                    msgBox.style.color = '#b93a3f';
+                    msgBox.textContent = 'Connection error. Please try again.';
+                });
+        });
+    }
+
+    const editAddressForm = document.getElementById('editAddressForm');
+    if (editAddressForm) {
+        editAddressForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const userId = localStorage.getItem('dishdash_user_id') || sessionStorage.getItem('dishdash_user_id') || '';
+            const formData = new FormData(this);
+            formData.set('form_type', 'update_address');
+            if (userId) formData.set('user_id', userId);
+
+            const msgBox = document.getElementById('editAddressMsg');
+
+            fetch('addUserData.php', { method: 'POST', body: formData })
+                .then(r => r.json())
+                .then(data => {
+                    msgBox.style.display = 'block';
+                    if (data.status === 'success') {
+                        msgBox.style.background = '#e8f7ee';
+                        msgBox.style.color = '#219a52';
+                        msgBox.textContent = data.message;
+                        if (data.address) {
+                            const a = data.address;
+                            document.getElementById('profileStreetAddress').textContent = a.streetAddress || 'No address saved';
+                            document.getElementById('profileAptSuite').textContent = a.aptSuite || 'N/A';
+                            document.getElementById('profileCityState').textContent = a.cityState || '—';
+                            document.getElementById('profileZipCode').textContent = a.zipCode || '—';
+                            document.getElementById('profileAdditionalInfo').textContent = a.additionalInfo || 'N/A';
+                        }
+                        setTimeout(() => closeModal(editAddressModal), 1500);
+                    } else {
+                        msgBox.style.background = '#fde8e8';
+                        msgBox.style.color = '#b93a3f';
+                        msgBox.textContent = data.message || 'Update failed.';
+                    }
+                })
+                .catch(() => {
+                    msgBox.style.display = 'block';
+                    msgBox.style.background = '#fde8e8';
+                    msgBox.style.color = '#b93a3f';
+                    msgBox.textContent = 'Connection error. Please try again.';
+                });
+        });
+    }
+
+
+    function enhanceOrderItems() {
+        const ordersList = document.getElementById('ordersList');
+        if (!ordersList) return;
+
+        const items = ordersList.querySelectorAll('.orderItem');
+        items.forEach(item => {
+            if (item.querySelector('.order-status-badge')) return; 
+
+            const createdAtEl = item.querySelector('.order-created-at');
+            const createdAt = createdAtEl ? new Date(createdAtEl.dataset.created) : new Date(Date.now() - 2 * 60 * 60 * 1000);
+            const now = new Date();
+            const diffMs = now - createdAt;
+            const diffMin = diffMs / 60000;
+
+            let badgeClass, badgeIcon, badgeText;
+            if (diffMin < 10) {
+                badgeClass = 'badge-pending'; badgeIcon = 'outdoor_grill'; badgeText = 'Preparing';
+            } else if (diffMin < 60) {
+                badgeClass = 'badge-onway'; badgeIcon = 'delivery_dining'; badgeText = 'On the Way';
+            } else {
+                badgeClass = 'badge-delivered'; badgeIcon = 'check_circle'; badgeText = 'Delivered';
+            }
+
+            const badge = document.createElement('span');
+            badge.className = 'order-status-badge ' + badgeClass;
+            badge.innerHTML = `<span class="material-symbols-outlined">${badgeIcon}</span>${badgeText}`;
+            const detailsDiv = item.querySelector('.order-item-details') || item;
+            detailsDiv.appendChild(badge);
+        });
+    }
+
+    const ordersListEl = document.getElementById('ordersList');
+    if (ordersListEl) {
+        new MutationObserver(enhanceOrderItems).observe(ordersListEl, { childList: true, subtree: true });
+    }
+
+    const profileTabBtn = document.getElementById('profileTabButt');
+    const ordersTabBtn  = document.getElementById('ordersTabButt');
+    if (profileTabBtn) {
+        profileTabBtn.addEventListener('click', () => {
+            profileTabBtn.classList.add('up-tab-active');
+            if (ordersTabBtn) ordersTabBtn.classList.remove('up-tab-active');
+        });
+    }
+    if (ordersTabBtn) {
+        ordersTabBtn.addEventListener('click', () => {
+            ordersTabBtn.classList.add('up-tab-active');
+            if (profileTabBtn) profileTabBtn.classList.remove('up-tab-active');
+            setTimeout(enhanceOrderItems, 200);
+        });
+    }
+
+    const _origProfileDisplay = window.displayProfileData;
+    function patchProfileDisplay() {
+
+        const headerName = document.getElementById('profileHeaderName');
+        const profileNameEl = document.getElementById('profileName');
+        const profileEmailEl = document.getElementById('profileEmail');
+        if (!headerName || !profileNameEl) return;
+
+        const observer = new MutationObserver(() => {
+            headerName.textContent = profileNameEl.textContent;
+            const emailEl = document.getElementById('profileHeaderEmail');
+            if (emailEl && profileEmailEl) emailEl.textContent = profileEmailEl.textContent;
+        });
+        observer.observe(profileNameEl, { childList: true, characterData: true, subtree: true });
+    }
+    patchProfileDisplay();
+
+
+    const userProfPageCon = document.querySelector('.userProfPageCon');
+    if (userProfPageCon) {
+        new MutationObserver(() => {
+            if (userProfPageCon.style.display !== 'none') {
+                setTimeout(() => {
+                    const name = document.getElementById('profileName')?.textContent || '';
+                    const email = document.getElementById('profileEmail')?.textContent || '';
+                    const hn = document.getElementById('profileHeaderName');
+                    const he = document.getElementById('profileHeaderEmail');
+                    if (hn && name && name !== 'Not loaded') hn.textContent = name;
+                    if (he && email && email !== 'Not loaded') he.textContent = email;
+                }, 400);
+            }
+        }).observe(userProfPageCon, { attributes: true, attributeFilter: ['style'] });
+    }
+    }
+    </script>
+</html>
